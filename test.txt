@@ -1,0 +1,319 @@
+switch
+
+       int numero;
+
+        System.out.println("Informe um numero inteiro: ");
+        numero = m.nextInt();
+
+        switch (numero) {//Recebi o paramentro para ser analisado nos cases.                        
+            case 1:
+                System.out.println(" O numero informado e Um");
+                break;
+            case 2:
+                System.out.println("O numero informado e Dois");
+                break;
+            case 3:
+                System.out.println("O numero informado e Tres");
+                break;
+            case 4:
+                System.out.println("O numero informado e quatro");
+                break;
+            case 5:
+                System.out.println("O numero informado e Cinco");
+                break;
+            case 6:
+                System.out.println("O numero informado e Seis");
+                break;
+        }
+    }
+}
+
+public static void main(String[] args) {  // switch
+       
+        Scanner tec = new Scanner (System.in);
+        System.out.println("Quantas pernas ?  ");
+        int perna = tec.nextInt();
+        String tipo;
+        System.out.println("Isto e um(a)");
+       
+ switch (perna){
+            case 1:
+                tipo = "Saci";
+                break;
+            case 2:
+                tipo = "Bipede";
+                break;
+            case 3:
+                tipo = "tripede";
+                break;
+            case 4:
+                tipo = "Quadrupede";
+                 break;
+            case 6:
+                 tipo  = "Aranha";
+                   break;
+            default:
+                tipo = "Et";
+        }
+        System.out.println(tipo);
+		
+		int code;
+
+        System.out.println("Digite uma opcao");
+        code = m.nextInt();
+
+        switch (code) {
+            case 1:
+                System.out.println("Hot Dog");
+                System.out.println("$ 4,0");
+                break;
+            case 2:
+                System.out.println("X-salade");
+                System.out.println("$ 6,00");
+                break;
+            case 3:
+                System.out.println("X-tudo");
+                System.out.println("$ 10,00");
+                break;
+            case 4:
+                System.out.println("x-Bacon");
+                System.out.println("$ 7,00");
+                break;
+            case 5:
+                System.out.println("Drink");
+                System.out.println("$ 2,00");
+                break;
+            default :
+                System.out.println("Opcao invalida3");
+ ============================================================
+if e else
+
+package anobissesxto;
+
+import java.util.Scanner;
+
+    public class AnoBissesxto {
+        public static void main(String[] args) {
+       
+       
+        Scanner mo = new Scanner(System.in);  
+        int idade;
+        
+            System.out.println("Digite sua idade: ");
+        idade = mo.nextInt();
+        
+        if(idade<=17){
+            System.out.println("Voce e menor");
+        }
+        else if(idade>=18 && idade<=65){
+            System.out.println("Voce e adulto:");                       
+        }
+        else 
+                System.out.println("Idoso");
+        
+   }
+ }
+ 
+ int idade;
+            
+            System.out.println("Qual sua idade? ");
+            idade = m.nextInt();
+            
+            if(idade <12){
+                System.out.println("Rannya e crianca");   
+           }
+            else if(idade <18){
+                System.out.println("Rannya e uma adolescente");
+           }
+            else if(idade <=65){
+                System.out.println("Rannya ainda sera adulta");
+            }
+            else{
+                System.out.println("Vai demora pra Rannya ser uma idosa");
+            }
+  
+   double x;  
+            System.out.println("Digite um numero");
+            x = m.nextDouble();
+            if (x >=0 && x <=25){
+                System.out.println("Intervalo [0,25]");        
+        } 
+            else if(x >25 && x<=50 ) {
+                System.out.println("Intervalo [25,50]");
+            } 
+            else if(x > 50 && x<=100){
+                System.out.println("Intervalo [50,100]");
+       }    
+        else{
+                System.out.println("Fora do intervalo.");
+        }   
+
+System.out.println("entre com o preco do item"); 
+	   double valor = scan.nextDouble();
+	   
+	   if (valor <= 10){
+		   System.out.println("Esta barato,pode comprar");
+	   }else if (valor >10 && valor < 15){
+           System.out.println("Voce pode pedir um desconto");
+	   
+           }else if ( valor >= 15 && valor <17){
+		   System.out.println("pode pesquisar mais");
+	   }else{ //valor >=17
+           System.out.println("Muito caro");	   
+		   
+	    }
+	}
+}
+//Quando você usa else if você executa o if apenas se o if anterior não for valido. Na pratica, imagine o codigo a seguir...
+===============================================================
+
+/*int m=0;
+        while(m<12){
+            m = m +1;
+            //m++;
+            System.out.println("Amanha sera diferent: "+m);*/
+        
+        
+        /*int m = 13;//deve ser igual     
+        do{
+            System.out.println("Amanha sera diferent:");
+            m++;
+        }while(m<12);//para repertir*/
+        
+        /*int vetor[] = {1,2,3,4,5,6,7,8,9,10};        
+            for(int m:vetor)
+                System.out.println(m);*/
+        
+        /*Scanner m = new Scanner(System.in);//numeros positivos             
+            System.out.println("Digite um valor: ");
+            int valor = m.nextInt();
+            int  maior,menor;
+            menor = maior = valor;
+            double media =0, soma =0;  
+            int numeros = 0; 
+            
+            while(valor != -1)
+            {
+                soma = soma + valor;
+                numeros++;
+                if(valor>maior)
+                    maior = valor;
+                else if (valor<menor)
+                    menor = valor;
+                 System.out.println("Digite um valor: ");
+                valor = m.nextInt();
+            } 
+            media = soma/numeros;
+            
+            System.out.println("Maior valor = "+maior);
+            System.out.println("Menor valor = "+menor);
+            System.out.printf("media = %.2f ",media);*/
+        
+        /*double e = 0;
+        
+        Scanner m = new Scanner(System.in);//50 primeiro termo valor x                
+            System.out.println("Digite o valor de x: ");
+            float x = m.nextFloat();
+           
+            for(int y=1; y<=50; y++)
+            e=e+Math.pow(x, y)/y;
+            
+            System.out.printf("O valor de e(x) = %.2f",e);*/
+        
+        /*int anterior1 =1;//Fibonacci                 
+        int anterior2 =2; 
+        int calculate = anterior1 =  anterior2; 
+        int soma = anterior1+anterior2+calculate;
+            System.out.println(anterior1+","+anterior2+","+calculate);
+        
+            for(int m=4;m<=40;m++ )
+            {
+             anterior1 = anterior2;
+             anterior2 = calculate;
+             calculate = anterior1 + anterior2;
+             soma = soma + calculate;
+             
+                System.out.println(calculate+",");
+          } 
+            float media = soma/20;
+            System.out.println("Media= "+media);*/
+        
+        int num=0;
+        Scanner m = new Scanner(System.in);
+            System.out.println("Digite um valor");
+        num = m.nextInt();
+        
+        while(num<=10){
+            System.out.println(num+" x "+ num +" = "+num*num);
+            num++;
+        }
+    }
+ }
+             int i=0;
+             do{
+                 System.out.println("Moses "+i);
+                 i++;
+             }while(i<10);*/
+ ======================================================
+                          Programas 
+						  
+						  package exercicios;
+
+import java.util.Scanner;
+
+    public class Exercicios {
+        public static void main(String[] args) {
+        // TODO code application logic here
+            /*Scanner mo = new Scanner(System.in);                 
+        
+            System.out.println("Entre com primeiro numero "); 
+            int num1 = mo.nextInt();
+            
+            System.out.println("Entre com o segundo numero ");
+            int num2 = mo.nextInt();
+            
+            int resultado = num1 + num2;
+            System.out.println("A soma entre dois numero e "+resultado  );*/
+           
+            /*Scanner mo = new Scanner(System.in);//ler notas bimestrais
+            
+            System.out.println("Entre com a primeira nota ");
+            double nota1 = mo.nextDouble();
+            
+            System.out.println("Entre com a segunda nota ");
+            double nota2 = mo.nextDouble();
+            
+            System.out.println("Entre com a terceira nota  ");
+            double nota3 = mo.nextDouble();
+            
+            System.out.println("Entre com a quarta nota  ");
+            double nota4 = mo.nextDouble();
+                               
+            double media = (nota1 + nota2 + nota3 + nota4) /4; 
+            System.out.println("A media e: "+ media);*/
+            
+            //Scanner mo = new Scanner(System.in);
+            
+            /*System.out.println("Entre com a quantidade de metros:  ");
+            double metros = mo.nextDouble();
+            
+            //um metro e 100 centimentros
+            double cm = metros * 100;  
+            
+            System.out.println(metros + " m e igual a "+ cm + " cm ");*/
+            
+            //6 programa que marca um raio de um circulo e calcule a area
+          Scanner m = new Scanner(System.in);
+          
+            System.out.println("Entre com um raio de circulo: ");
+            double raio = m.nextDouble();
+            
+            double area = Math.PI * Math.pow(raio,2);
+            
+            System.out.println("A area do circulo e:"+area);
+            
+    }
+    
+}
+
+
